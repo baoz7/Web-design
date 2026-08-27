@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 2: Semantic HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1>Project Overview</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Model Performance</h2>
+        <table>
+          <caption>
+            Model comparison
+          </caption>
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Accuracy</th>
+              <th>F1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Logistic Regression</td>
+              <td>0.91</td>
+              <td>0.88</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Input Data</h2>
+        <form id="house-form" action="/predict" method="post">
+          <label for="address">Address</label>
+          <input id="address" name="address" type="text" required />
+
+          <label for="bedrooms">Bedrooms</label>
+          <input id="bedrooms" name="bedrooms" type="number" required />
+          <button type="submit">Predict</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Data Science Project Skeleton</p>
+    </footer>
+    <script src="app.js" defer></script>
+  </body>
+</html>
